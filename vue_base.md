@@ -1,6 +1,6 @@
 |常见 api||
 |--|--|
-|:visible :visible.sync v-model  label-width slot slot-scope|
+|:visible :visible.sync v-model  label-width slot slot-scope||
 
 npm 命令：
 npm run 
@@ -44,6 +44,8 @@ keyup  click
 
 directives  组件的属性
 hook 函数
+
+
 |钩子名称|作用解释|特别说明|
 |--|--|--|
 |bind |当自定义指定第一次绑定的时候触发，随后失效||
@@ -52,13 +54,16 @@ hook 函数
 |componentUpdated|当组件及其子 VNode 全部更新后调用||
 |unbind|指令与元素解绑时调用 ||
 
+
 [钩子函数参数](https://cn.vuejs.org/v2/guide/custom-directive.html#钩子函数参数)（事件发生时，给钩子函数传递的参数）
-|参数|说明|
+
+
+| 参数 | 说明 |
 |--|--|
-|el|将要绑定的元素|
-|binding|包含 {name, value, oldvalue, expression, arg, modifiers} 属性的 object ，|
-|vnode|Vue 编译器解析的虚拟节点|
-|oldVnode|只在 update 与 componentUpdated 两个钩函数中传递|
+|el |将要绑定的元素|
+|binding |包含 {name, value, oldvalue, expression, arg, modifiers} 属性的 object ，|
+|vnode |Vue 编译器解析的虚拟节点|
+|oldVnode |只在 update 与 componentUpdated 两个钩函数中传递|
 
 举例：
     例1：
@@ -77,11 +82,13 @@ hook 函数
 
 
 创建组件的几种方法：
+
 |new Vue()|.vue文件|Vue.component()|createElement()|
 |--|--|--|--|
 |||Vue.component('elName',{options},)|
 
 琐碎杂项 - 待整理
+
 |序号|问题|解释|整理|
 |---|--|--|---|
 |1|slot|slots().default  <span style="color:green">$slots</span>|
@@ -90,9 +97,10 @@ hook 函数
 
 
 核心概念
+
 |概念|解释|
 |--|--|
-|模板字符串
+|模板字符串|
 |模板文件|
 |单文件组件|| 
   
